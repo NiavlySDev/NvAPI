@@ -74,8 +74,8 @@ public class Fonctions {
 		}
 	}
 
-	public void errorMSG(Player p, String name, String ver, String nomerreur, String errmsg) {
-		 p.sendMessage(ChatColor.RED+"["+name+" "+ver+"] - Erreur '"+nomerreur+"': "+errmsg);
+	public void errorMSG(Player p, String name, String ver, String nameerr, String errmsg) {
+		 p.sendMessage(ChatColor.RED+"["+name+" "+ver+"] - Error '"+nameerr+"': "+errmsg);
 		 return;
 	}
 	
