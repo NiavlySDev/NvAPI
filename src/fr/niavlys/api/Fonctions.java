@@ -45,11 +45,18 @@ public class Fonctions {
 		return item;
 	}
 	
+	public ItemMeta setItemFlagsEnchant(ItemMeta item) {
+		for(ItemFlag itmf : ItemFlag.values()) {
+			item.addItemFlags(itmf);
+		}
+		item.addEnchant(Enchantment.DURABILITY, 1, false);
+		return item;
+	}
+	
 	public ItemStack getNoneItem() {
 		ItemStack it = new ItemStack(Material.LIGHT_GRAY_STAINED_GLASS_PANE);
 		ItemMeta itM = it.getItemMeta();
 		itM.setDisplayName(" ");
-		itM.addEnchant(Enchantment.DURABILITY, 1, true);
 		setItemFlags(itM);
 		it.setItemMeta(itM);
 		

@@ -9,7 +9,7 @@ public class NvApi extends JavaPlugin {
 	
 	public static Fonctions fonctions;
 	
-	public static String ver = "v0.3";
+	public static String ver = "v1.0";
 	
 	public void onEnable() {
 		fonctions = new Fonctions();
